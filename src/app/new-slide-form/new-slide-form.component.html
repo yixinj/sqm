@@ -1,0 +1,20 @@
+<form class="example-container">
+
+  <mat-form-field>
+    <input matInput placeholder="Case #" [(ngModel)]="caseNum" name="tempSlide.caseNum">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Block #" [(ngModel)]="blockNum" name="tempSlide.blockNum">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Stain Name" [(value)]="stainName" name="tempSlide.stainName">
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Bcl-2</mat-option>
+      <mat-option value="option2">Glucagon</mat-option>
+      <mat-option value="option3">Somatostatin</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  <button mat-raised-button (click)="onCancel()">Cancel</button>
+</form>
