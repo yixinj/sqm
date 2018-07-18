@@ -7,6 +7,11 @@ import {
   MatInputModule,
   MatButtonModule,
   MatSelectModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatCheckboxModule,
+  MatToolbarModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,6 +23,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatSelectModule,
     BrowserAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   declarations: []
 })

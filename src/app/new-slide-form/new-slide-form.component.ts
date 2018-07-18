@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Slide } from '../slide';
 
+
 @Component({
   selector: 'app-new-slide-form',
   templateUrl: './new-slide-form.component.html',

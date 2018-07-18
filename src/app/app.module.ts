@@ -5,11 +5,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NewSlideFormComponent } from './new-slide-form/new-slide-form.component';
+import { SlideDisplayComponent } from './slide-display/slide-display.component';
+import { LoginInfoComponent } from './login-info/login-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewSlideFormComponent
+    NewSlideFormComponent,
+    SlideDisplayComponent,
+    LoginInfoComponent
   ],
   imports: [
     BrowserModule,
