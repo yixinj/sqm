@@ -1,0 +1,7 @@
+<form id="settings">
+  <h1>Settings</h1>
+  <mat-checkbox color="primary" [(ngModel)]="this.settingsService.settings.id" name=acronym>id</mat-checkbox>
+  <mat-checkbox *ngFor="let bool of this.settingsService.settings" color="primary" [(ngModel)]="this.settingsService.settings.bool"
+    name=acronym>{{bool}}</mat-checkbox>
+  <button (click)="test()">test</button>
+</form>

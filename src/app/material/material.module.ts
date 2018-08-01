@@ -11,7 +11,8 @@ import {
   MatPaginatorModule,
   MatSortModule,
   MatCheckboxModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatProgressSpinnerModule,
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatPaginatorModule,
     MatSortModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   declarations: []
 })

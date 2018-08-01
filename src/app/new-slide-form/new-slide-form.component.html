@@ -1,13 +1,13 @@
-<form class="example-container">
+<form class="example-container" [formGroup]="newSlideForm">
 
   <mat-form-field>
-    <input matInput placeholder="Case #" [(ngModel)]="caseNum" name="tempSlide.caseNum">
+    <input matInput placeholder="Case #" formControlName="caseNum">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Block #" [(ngModel)]="blockNum" name="tempSlide.blockNum">
+    <input matInput placeholder="Block #" formControlName="blockNum">
   </mat-form-field>
   <mat-form-field>
-    <mat-select placeholder="Stain Name" [(value)]="stainName" name="tempSlide.stainName">
+    <mat-select placeholder="Stain Name" formControlName="stainName">
       <mat-option>None</mat-option>
       <mat-option value="option1">Bcl-2</mat-option>
       <mat-option value="option2">Glucagon</mat-option>
@@ -15,6 +15,6 @@
     </mat-select>
   </mat-form-field>
 
-  <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
-  <button mat-raised-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onAdd()">Add</button>
+  <button id="back-button" mat-raised-button (click)="goBack()">Back</button>
 </form>
